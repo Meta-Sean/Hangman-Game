@@ -1,0 +1,25 @@
+p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    
+}
+.container {
+    color: white;
+}
+#game {
+    background: url('../images/head.jpg');
+    padding-bottom: 170px;
+    padding-top: 50px;
+    
+}
+.world {
+    background: url('../images/back.jpg');
+    padding-bottom: 450px;
+    text-align: center;
+
+}
+body {
+    background: url('../images/background.jpg'); 
+}
+    
