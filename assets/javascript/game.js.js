@@ -5,9 +5,8 @@ var lossCounter = 0;
 var wrongLetters = [];
 var guessesLeft = 9;
 var wordLetters = [];
-var unGuessed = 0;
-var word = "";
 var userGuess;
+var word = "";
 var answerArray = [];
 var wordBank = ['brazil', 'germany', 'italy', 'argentina','spain','england','france','netherlands','urguguay','sweden'];
 
@@ -26,7 +25,7 @@ var wordBank = ['brazil', 'germany', 'italy', 'argentina','spain','england','fra
 // Keypress triggers main game functionality
 document.onkeyup = function(event){
       // Store the key press
-    var userGuess = event.key;
+    userGuess = event.key;
     //See what key we pressed
     console.log('User pressed', userGuess);
      
