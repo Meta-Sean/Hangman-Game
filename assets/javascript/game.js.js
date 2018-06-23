@@ -11,14 +11,6 @@ var userGuess;
 var answerArray = [];
 var wordBank = ['brazil', 'germany', 'italy', 'argentina','spain','england','france','netherlands','urguguay','sweden'];
 
-
-//Stores the wrong letter choices.
-    wrongLetters = [];
-    console.log('Wrong Letters',wrongLetters);
-    // Correct Answsers and '_''s
-    var answerArray = [];
-    // User has 14 guesses in guessesLeft counter.
-    var guessesLeft = 9;
     //Pick a random word from the word bank
     var word = wordBank[Math.floor(Math.random() * wordBank.length)];
     //Seperate each letter and store in word letters array.
@@ -26,7 +18,7 @@ var wordBank = ['brazil', 'germany', 'italy', 'argentina','spain','england','fra
     // Fill the unguessed variable with number of letters in word/word letters.
     console.log(wordLetters);
     console.log(word);
-    // Loop through the length of unGuessed and add '_''s to the answer array 
+    // Loop through the length of seperate letters and add '_''s to the answer array 
     for ( var i = 0; i < wordLetters.length; i++){
         answerArray.push('_');
     }
@@ -41,7 +33,7 @@ document.onkeyup = function(event){
     // Tried this for loop many ways, but could not get it to push the wrong letter the amount of the length of the word so created.
     // A false variable for the loop.
     var letterCheck = false;
-    //Loop through for the number of length of wordletters array then see if the userGuessmatches a letter in the word.
+    //Loop through for the number of length of wordletters array then see if the userGuess matches a letter in the word.
     for(var i = 0; i < wordLetters.length; i++){
         if(wordLetters[i] === userGuess){
             letterCheck = true;
